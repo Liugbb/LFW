@@ -1,0 +1,16 @@
+#PBS -N test
+#PBS -o out.$PBS_JOBID
+#PBS -e err.$PBS_JOBID
+#PBS -l nodes=5:ppn=28
+#PBS -q batch
+#PBS -o out.txt
+#pbs -e err.txt
+
+cd $PBS_O_WORKDIR
+cat "$PBS_NODEFILE"
+NP=$(wc -l < "$PBS_NODEFILE")
+source /public/software/profile.d/mathlib_netcdf-4.1.3-intel.sh
+
+mpirun -np $NP   ./mitgcmuv
+
+

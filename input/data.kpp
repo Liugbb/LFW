@@ -1,0 +1,12 @@
+# KPP parameters
+ &KPP_PARM01
+ KPPmixingMaps   = .FALSE.,
+ KPPwriteState   = .FALSE.,
+ minKPPhbl=30.,
+ KPP_ghatUseTotalDiffus=.FALSE.,
+ &
+ &KPP_PARM02
+ 
+ &
+ &KPP_PARM03
+ &

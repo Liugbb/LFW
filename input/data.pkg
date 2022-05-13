@@ -1,0 +1,6 @@
+# Packages
+ &PACKAGES
+ useOBCS=.FALSE.,
+ useMNC=.TRUE.,
+ useKPP=.TRUE.,
+ &
